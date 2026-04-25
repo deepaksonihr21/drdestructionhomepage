@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr.Destruction | BLACK FLAG</title>
+    <style>
+        :root {
+            --primary: #ff0000;
+            --bg: #000000;
+            --card-bg: #111111;
+            --text: #ffffff;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+        }
+
+        /* --- Top Bar Fixed Alignment --- */
+        .top-info {
+            width: 100%;
+            background: linear-gradient(90deg, #000, #200, #000);
+            padding: 8px 0;
+            text-align: center;
+            border-bottom: 1px solid #333;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .insta-id {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .promo-code {
+            background: var(--primary);
+            color: #fff;
+            padding: 1px 8px;
+            border-radius: 4px;
+            font-weight: 900;
+            box-shadow: 0 0 10px var(--primary);
+            margin-left: 5px;
+        }
+
+        /* --- Header --- */
+        h1 {
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            margin-top: 25px;
+            letter-spacing: 12px;
+            text-transform: uppercase;
+            border-bottom: 3px solid var(--primary);
+            padding-bottom: 10px;
+            text-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+        }
+
+        /* --- Main Image Container --- */
+        .main-reel {
+            width: 90%;
+            max-width: 400px;
+            aspect-ratio: 9/16;
+            margin: 35px 0;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 2px solid #222;
+            background: #000;
+        }
+        
+        .main-reel img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            display: block;
+        }
+
+        /* --- Community Button --- */
+        .community-btn {
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            padding: 20px 40px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 50px;
+            text-transform: uppercase;
+            margin-bottom: 60px;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
+            transition: 0.3s;
+            text-align: center;
+        }
+        .community-btn:hover { transform: scale(1.1); background: white; color: black; }
+
+        /* --- Grid Container --- */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            width: 90%;
+            max-width: 1200px;
+            padding-bottom: 100px;
+        }
+
+        .section-card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            border: 1px solid #222;
+            transition: 0.4s;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .section-card:hover { border-color: var(--primary); transform: translateY(-5px); background: #1a0000; }
+
+        .spacer { height: 100px; width: 100%; }
+
+        @media (max-width: 600px) {
+            h1 { letter-spacing: 5px; }
+            .grid-container { grid-template-columns: 1fr; }
+            .top-info { font-size: 0.75rem; gap: 8px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-info">
+        <a href="https://www.instagram.com/dr.destruction_?igsh=MTg2M3A4N3NlcDM5eQ==" class="insta-id" target="_blank">📸 @DR_DESTRUCTION</a>
+        <span>USE CODE: <span class="promo-code">DR10</span></span>
+    </div>
+
+    <h1>BLACK FLAG</h1>
+
+    <div class="main-reel">
+        <img src="dr.jpeg" alt="Dr. Destruction">
+    </div>
+
+    <a href="https://www.instagram.com/channel/AbZoSDoO6WP174BJ/" class="community-btn" target="_blank">
+        Join Black Flag Community
+    </a>
+
+    <div class="grid-container">
+        <a href="merged.pdf" class="section-card" target="_blank">
+             WORKOUT PLAN (PDF)
+        </a>
+
+        <a href="https://bit.ly/3U6zTJM" class="section-card" target="_blank">CREATINE I CONSUME</a>
+        <a href="https://www.rippedupnutrition.com" class="section-card">Protein i consume</a>
+        <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MDkyMjk0NDg5MDMwNTQ3?story_media_id=3842079904486351556_1403503569&igsh=MXh5YzU0djF4YTAzaQ==" class="section-card">Weight Gain Plan</a>
+        <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MDg3OTQyMTg1Mjc4NjM5?story_media_id=3842081851700357909_1403503569&igsh=ajd2b2NlaW8xMnFr" class="section-card">Weight Loss Plan</a>
+        <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE3ODg3Mzg1NzU3MwMwMjg2?story_media_id=3842084360548477578_1403503569&igsh=MXF6em8xajkxOWZpMw==" class="section-card">Maintain Calories</a>
+        <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MDE5NDM1NzY5NTY2NjYx?story_media_id=3487420109931723859_1403503569&igsh=Z3licTRib3dmYmU=" class="section-card">Home Workout</a>
+        <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MDQwMjg0NTg3NTM0MTU2?story_media_id=3844627933630132365_1403503569&igsh=MXF3Z3FiczdiMTZ6bw==" class="section-card">BODYBUILDING Posing</a>
+        <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MzYyNjQ3Mzc1MTQyMzc3?story_media_id=3529440521238412081_1403503569&igsh=NXhmczRhanU1dW1h" class="section-card">Supplements Guide</a>
+        <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE3OTk2MDA3NDI1NjE5MTA5?story_media_id=3607719267636534983_1403503569&igsh=MWVqdXFzdHMybjY0bg==" class="section-card">YOUR FIRST 30 DAYS IN GYM</a>
+        <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MDMwMDY2NTgxNDI1MTEz?story_media_id=3518461491752718792_1403503569&igsh=MXNiN2xuem9sNGkxZA==" class="section-card">Content Tips</a>
+        <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MDE4ODMwODQzNTQ0MTky?story_media_id=3684538017882460120_1403503569&igsh=YnNhanV6ZnprMzBi" class="section-card">Muscle Build</a>
+        <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE3OTU0NDg2MDIyMDAzNzky?story_media_id=3701220382088156352_1403503569&igsh=MWhraXNrZ2NlZzMzZA==" class="section-card">Winter Arc</a>
+        <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MDkxMTUzMTUwOTczODgw?story_media_id=3814960895521525048_1403503569&igsh=MTNtamxyaGJwZm13eg==" class="section-card">Basics</a>
+        <a href="https://www.instagram.com/dr.destruction_?igsh=MTg2M3A4N3NlcDM5eQ==" class="section-card">DR DESTRUCTION</a>
+        <a href="https://youtube.com/@dr.destruction_?si=Lkg-ZWtx3NeujJB0" class="section-card">YouTube Channel</a>
+    </div>
+
+    <div class="spacer"></div>
+
+</body>
+</html>
